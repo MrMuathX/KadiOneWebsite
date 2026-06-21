@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="98 -8 300 478">
+  <defs>
+    <style>
+      .m-red { fill: #fd1417; }
+      .m-light { fill: #ffffff; }
+    </style>
+  </defs>
+  <polygon class="m-red" points="323.64 0 105.24 0 105.24 321.6 323.64 0"/>
+  <polygon class="m-light" points="198.13 320.36 102.84 459.6 311.94 459.6 198.13 320.36"/>
+  <polygon class="m-light" points="393.4 33.59 393.4 439.22 385.36 429.72 385.38 45.01 393.4 33.59"/>
+  <polygon class="m-light" points="377.24 57.2 377.2 419.57 361.72 401.33 361.73 79.45 377.24 57.2"/>
+  <polygon class="m-light" points="353.61 92.24 353.61 391.25 330.02 362.9 330.02 126.7 353.61 92.24"/>
+  <polygon class="m-light" points="321.79 138.89 321.93 352.78 290.83 315.48 290.32 184.88 321.79 138.89"/>
+  <path class="m-light" d="M282.73,196.87v108.66s-37.23-40.92-37.23-49.84,37.23-58.82,37.23-58.82Z"/>
+</svg>
