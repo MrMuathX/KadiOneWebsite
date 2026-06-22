@@ -135,6 +135,7 @@
     "form.msg": "الرسالة",
     "form.msg.ph": "أخبرنا عن مشروعك...",
     "form.send": "إرسال الطلب",
+    "form.success": "شكرًا لك — تم استلام طلبك، وسنتواصل معك قريبًا.",
     "form.note": "بالإرسال، أنت توافق على أن نتواصل معك بخصوص طلبك.",
 
     /* Footer */
@@ -184,6 +185,8 @@
 
     document.querySelectorAll(".lang-toggle").forEach(function (b) {
       b.textContent = ar ? "English" : "العربية";
+      b.lang = ar ? "en" : "ar";
+      b.setAttribute("aria-label", ar ? "View the site in English" : "عرض الموقع بالعربية");
     });
 
     try { localStorage.setItem("koc_lang", lang); } catch (e) {}

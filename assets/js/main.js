@@ -36,6 +36,45 @@
   var yearEl = document.getElementById("year");
   if (yearEl) yearEl.textContent = new Date().getFullYear();
 
+  /* Scrollspy — highlight the active nav link */
+  var navLinks = Array.prototype.slice.call(document.querySelectorAll(".main-nav a"));
+  if ("IntersectionObserver" in window && navLinks.length) {
+    var spy = new IntersectionObserver(function (entries) {
+      entries.forEach(function (entry) {
+        if (!entry.isIntersecting) return;
+        var id = "#" + entry.target.id;
+        navLinks.forEach(function (a) {
+          a.classList.toggle("active", a.getAttribute("href") === id);
+        });
+      });
+    }, { rootMargin: "-45% 0px -50% 0px", threshold: 0 });
+    navLinks.forEach(function (a) {
+      var href = a.getAttribute("href");
+      if (href && href.charAt(0) === "#" && href.length > 1) {
+        var sec = document.querySelector(href);
+        if (sec) spy.observe(sec);
+      }
+    });
+  }
+
+  /* Contact form — friendly confirmation (no backend) */
+  var form = document.querySelector(".contact-form");
+  if (form) {
+    form.addEventListener("submit", function (e) {
+      e.preventDefault();
+      if (form.checkValidity && !form.checkValidity()) {
+        if (form.reportValidity) form.reportValidity();
+        return;
+      }
+      var status = form.querySelector(".form-status");
+      form.reset();
+      if (status) {
+        status.hidden = false;
+        status.scrollIntoView({ block: "nearest", behavior: "smooth" });
+      }
+    });
+  }
+
   /* Animated counters */
   function animateCount(el) {
     var target = parseFloat(el.getAttribute("data-count")) || 0;
