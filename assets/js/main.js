@@ -55,7 +55,7 @@
   /* Reveal on scroll + trigger counters */
   var reduce = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
   var revealEls = document.querySelectorAll(
-    ".section-head, .about-text, .about-visual, .card, .project, .step, .band-stat, .contact-info, .contact-form, .hero-stats li"
+    ".section-head, .about-text, .about-visual, .card, .vm-card, .value-pill, .project, .step, .band-stat, .contact-info, .contact-form, .hero-stats li"
   );
   revealEls.forEach(function (el, i) {
     el.classList.add("reveal");
