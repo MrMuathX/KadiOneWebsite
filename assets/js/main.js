@@ -16,6 +16,16 @@
   window.addEventListener("scroll", onScroll, { passive: true });
   onScroll();
 
+  /* Scroll-to-top links (back-to-top button + logo) — reliable even with a
+     sticky #top header where a plain #anchor jump misbehaves */
+  var prefersReduce = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+  document.querySelectorAll('a[href="#top"]').forEach(function (link) {
+    link.addEventListener("click", function (e) {
+      e.preventDefault();
+      window.scrollTo({ top: 0, behavior: prefersReduce ? "auto" : "smooth" });
+    });
+  });
+
   /* Mobile menu */
   if (toggle && nav) {
     toggle.addEventListener("click", function () {
