@@ -7,17 +7,15 @@
   <meta name="description" content="Kadi One Constructions WLL — a responsible & trusted construction partner in the Kingdom of Bahrain. Turnkey construction, project management, civil & MEP works, built on quality, integrity and reliability since 2017." />
   <meta name="theme-color" content="#fd1417" />
 
-  <!-- Open Graph -->
   <meta property="og:title" content="Kadi One Constructions WLL" />
   <meta property="og:description" content="A responsible & trusted construction partner in the Kingdom of Bahrain — quality, integrity and reliability since 2017." />
   <meta property="og:type" content="website" />
 
   <link rel="icon" type="image/svg+xml" href="./assets/img/logo-mark.svg" />
 
-  <!-- Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;600;700&family=Open+Sans:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;600;700&family=Open+Sans:wght@400;500;600;700&family=Cairo:wght@400;500;600;700&display=swap" rel="stylesheet" />
 
   <link rel="stylesheet" href="./assets/css/style.css" />
 </head>
@@ -36,19 +34,21 @@
 
       <nav class="main-nav" aria-label="Primary">
         <ul>
-          <li><a href="#about">About</a></li>
-          <li><a href="#services">Services</a></li>
-          <li><a href="#values">Vision</a></li>
-          <li><a href="#projects">Projects</a></li>
-          <li><a href="#contact">Contact</a></li>
+          <li><a href="#about" data-i18n="nav.about">About</a></li>
+          <li><a href="#services" data-i18n="nav.services">Services</a></li>
+          <li><a href="#values" data-i18n="nav.vision">Vision</a></li>
+          <li><a href="#projects" data-i18n="nav.projects">Projects</a></li>
+          <li><a href="#contact" data-i18n="nav.contact">Contact</a></li>
         </ul>
       </nav>
 
-      <a href="#contact" class="btn btn-primary nav-cta">Get a Quote</a>
-
-      <button class="nav-toggle" aria-label="Open menu" aria-expanded="false">
-        <span></span><span></span><span></span>
-      </button>
+      <div class="nav-actions">
+        <button class="lang-toggle" type="button" aria-label="Switch language">العربية</button>
+        <a href="#contact" class="btn btn-primary nav-cta" data-i18n="nav.quote">Get a Quote</a>
+        <button class="nav-toggle" aria-label="Open menu" aria-expanded="false">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
     </div>
   </header>
 
@@ -57,21 +57,21 @@
     <div class="hero-bg" aria-hidden="true"></div>
     <div class="hero-overlay" aria-hidden="true"></div>
     <div class="container hero-content">
-      <p class="eyebrow"><span class="eyebrow-bar"></span> Responsible &amp; Trusted Partner · Kingdom of Bahrain</p>
-      <h1>Building Bahrain with<br /><span class="accent">quality, integrity</span> &amp; reliability.</h1>
-      <p class="hero-lead">
+      <p class="eyebrow"><span class="eyebrow-bar"></span> <span data-i18n="hero.eyebrow">Responsible &amp; Trusted Partner · Kingdom of Bahrain</span></p>
+      <h1 data-i18n-html="hero.title">Building Bahrain with<br /><span class="accent">quality, integrity</span> &amp; reliability.</h1>
+      <p class="hero-lead" data-i18n="hero.lead">
         Kadi One Constructions WLL is one of Bahrain's most active construction companies — delivering
         turnkey projects from design to handover, on time and to the highest standards, since 2017.
       </p>
       <div class="hero-actions">
-        <a href="#projects" class="btn btn-primary">View Our Projects</a>
-        <a href="#contact" class="btn btn-ghost">Start a Project</a>
+        <a href="#projects" class="btn btn-primary" data-i18n="hero.cta1">View Our Projects</a>
+        <a href="#contact" class="btn btn-ghost" data-i18n="hero.cta2">Start a Project</a>
       </div>
 
       <ul class="hero-stats">
-        <li><span class="stat-value"><span class="stat-num" data-count="250">0</span><span class="stat-suffix">+</span></span><span class="stat-label">Skilled Workforce</span></li>
-        <li><span class="stat-value"><span class="stat-num" data-count="30">0</span><span class="stat-suffix">+</span></span><span class="stat-label">Engineers &amp; Supervisors</span></li>
-        <li><span class="stat-value"><span class="stat-prefix">BHD</span><span class="stat-num" data-count="50">0</span><span class="stat-suffix">M+</span></span><span class="stat-label">Delivered 2019–2020</span></li>
+        <li><span class="stat-value"><span class="stat-num" data-count="250">0</span><span class="stat-suffix">+</span></span><span class="stat-label" data-i18n="hero.stat1">Skilled Workforce</span></li>
+        <li><span class="stat-value"><span class="stat-num" data-count="30">0</span><span class="stat-suffix">+</span></span><span class="stat-label" data-i18n="hero.stat2">Engineers &amp; Supervisors</span></li>
+        <li><span class="stat-value"><span class="stat-prefix" data-i18n="hero.bhd">BHD</span><span class="stat-num" data-count="50">0</span><span class="stat-suffix">M+</span></span><span class="stat-label" data-i18n="hero.stat3">Delivered 2019–2020</span></li>
       </ul>
     </div>
   </section>
@@ -83,30 +83,30 @@
         <div class="about-img"></div>
         <div class="about-badge">
           <span class="badge-num">2017</span>
-          <span class="badge-label">Established &amp; certified contractor in Bahrain</span>
+          <span class="badge-label" data-i18n="about.badge">Established &amp; certified contractor in Bahrain</span>
         </div>
       </div>
       <div class="about-text">
-        <p class="section-eyebrow"><span class="eyebrow-bar"></span> Who We Are</p>
-        <h2 class="section-title">A foremost name in Bahraini construction.</h2>
-        <p>
+        <p class="section-eyebrow"><span class="eyebrow-bar"></span> <span data-i18n="about.eyebrow">Who We Are</span></p>
+        <h2 class="section-title" data-i18n="about.title">A foremost name in Bahraini construction.</h2>
+        <p data-i18n="about.p1">
           Kadi One Constructions WLL — a subsidiary of the Kadi Group — is one of the most important and
           active construction companies in Bahrain. Established in 2017 and strengthened by the merger of
           Al Ayat Contracting &amp; Trading, we have grown into a certified construction contractor known for
           quality turnkey delivery.
         </p>
-        <p>
+        <p data-i18n-html="about.p2">
           We are renowned for quality turnkey project construction, project management, a rigorous health
           &amp; safety policy, and cost-effective delivery within agreed timeframes — guided always by our
           three core values: <strong>Quality, Integrity and Reliability.</strong>
         </p>
         <ul class="check-list">
-          <li>Certified construction contractor in the Kingdom of Bahrain (CR 110333-1)</li>
-          <li>Turnkey delivery — from design and build through to handover</li>
-          <li>250+ skilled workforce and 30+ engineers &amp; supervisors</li>
-          <li>Uncompromising standards for health, safety &amp; quality</li>
+          <li data-i18n="about.li1">Certified construction contractor in the Kingdom of Bahrain (CR 110333-1)</li>
+          <li data-i18n="about.li2">Turnkey delivery — from design and build through to handover</li>
+          <li data-i18n="about.li3">250+ skilled workforce and 30+ engineers &amp; supervisors</li>
+          <li data-i18n="about.li4">Uncompromising standards for health, safety &amp; quality</li>
         </ul>
-        <a href="#services" class="link-arrow">Explore our capabilities →</a>
+        <a href="#services" class="link-arrow" data-i18n="about.link">Explore our capabilities →</a>
       </div>
     </div>
   </section>
@@ -115,9 +115,9 @@
   <section class="section services" id="services">
     <div class="container">
       <div class="section-head center">
-        <p class="section-eyebrow center"><span class="eyebrow-bar"></span> What We Do</p>
-        <h2 class="section-title">Comprehensive construction services</h2>
-        <p class="section-sub">
+        <p class="section-eyebrow center"><span class="eyebrow-bar"></span> <span data-i18n="services.eyebrow">What We Do</span></p>
+        <h2 class="section-title" data-i18n="services.title">Comprehensive construction services</h2>
+        <p class="section-sub" data-i18n="services.sub">
           We walk with our clients step by step — from the first collaboration meeting to the ribbon-cutting
           and beyond. Every project is unique, and we tailor our approach to fit yours.
         </p>
@@ -125,51 +125,34 @@
 
       <div class="cards-grid">
         <article class="card">
-          <div class="card-icon">
-            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 21h18M5 21V7l7-4 7 4v14M9 21v-6h6v6"/></svg>
-          </div>
-          <h3>Turnkey Construction</h3>
-          <p>Design-build delivery of residential, commercial and mixed-use buildings — handed over ready to use.</p>
+          <div class="card-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 21h18M5 21V7l7-4 7 4v14M9 21v-6h6v6"/></svg></div>
+          <h3 data-i18n="svc1.t">Turnkey Construction</h3>
+          <p data-i18n="svc1.d">Design-build delivery of residential, commercial and mixed-use buildings — handed over ready to use.</p>
         </article>
-
         <article class="card">
-          <div class="card-icon">
-            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 4h16v6H4zM4 14h16v6H4zM8 7h.01M8 17h.01"/></svg>
-          </div>
-          <h3>Project Management</h3>
-          <p>Disciplined planning, cost control and quality assurance across the full project lifecycle.</p>
+          <div class="card-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 4h16v6H4zM4 14h16v6H4zM8 7h.01M8 17h.01"/></svg></div>
+          <h3 data-i18n="svc2.t">Project Management</h3>
+          <p data-i18n="svc2.d">Disciplined planning, cost control and quality assurance across the full project lifecycle.</p>
         </article>
-
         <article class="card">
-          <div class="card-icon">
-            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M2 20h20M4 20V8l4-3 4 3M12 20V5l8 4v11"/></svg>
-          </div>
-          <h3>Civil &amp; Structural Works</h3>
-          <p>Foundations, structural and concrete works engineered for durability, safety and longevity.</p>
+          <div class="card-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M2 20h20M4 20V8l4-3 4 3M12 20V5l8 4v11"/></svg></div>
+          <h3 data-i18n="svc3.t">Civil &amp; Structural Works</h3>
+          <p data-i18n="svc3.d">Foundations, structural and concrete works engineered for durability, safety and longevity.</p>
         </article>
-
         <article class="card">
-          <div class="card-icon">
-            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M14 7l3 3-9 9-3 .7.7-3 8.3-8.3zM12 9l3 3"/></svg>
-          </div>
-          <h3>MEP Works</h3>
-          <p>Integrated mechanical, electrical and plumbing systems delivered by our specialist MEP department.</p>
+          <div class="card-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M14 7l3 3-9 9-3 .7.7-3 8.3-8.3zM12 9l3 3"/></svg></div>
+          <h3 data-i18n="svc4.t">MEP Works</h3>
+          <p data-i18n="svc4.d">Integrated mechanical, electrical and plumbing systems delivered by our specialist MEP department.</p>
         </article>
-
         <article class="card">
-          <div class="card-icon">
-            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M21 12a9 9 0 1 1-3-6.7M21 4v4h-4"/></svg>
-          </div>
-          <h3>Renovation &amp; Rehabilitation</h3>
-          <p>Rebuilding, refurbishment, fit-out and rehabilitation that restore and elevate existing assets.</p>
+          <div class="card-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M21 12a9 9 0 1 1-3-6.7M21 4v4h-4"/></svg></div>
+          <h3 data-i18n="svc5.t">Renovation &amp; Rehabilitation</h3>
+          <p data-i18n="svc5.d">Rebuilding, refurbishment, fit-out and rehabilitation that restore and elevate existing assets.</p>
         </article>
-
         <article class="card">
-          <div class="card-icon">
-            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/><path d="M9 12l2 2 4-4"/></svg>
-          </div>
-          <h3>Health, Safety &amp; Quality</h3>
-          <p>Safe, compliant sites and a certified quality management system focused on total client satisfaction.</p>
+          <div class="card-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/><path d="M9 12l2 2 4-4"/></svg></div>
+          <h3 data-i18n="svc6.t">Health, Safety &amp; Quality</h3>
+          <p data-i18n="svc6.d">Safe, compliant sites and a certified quality management system focused on total client satisfaction.</p>
         </article>
       </div>
     </div>
@@ -178,10 +161,10 @@
   <!-- ===== Stats band ===== -->
   <section class="stats-band">
     <div class="container stats-band-grid">
-      <div class="band-stat"><span class="stat-num">2017</span><span class="band-label">Established in Bahrain</span></div>
-      <div class="band-stat"><span class="stat-num" data-count="250">0</span><span class="stat-suffix">+</span><span class="band-label">Skilled workforce</span></div>
-      <div class="band-stat"><span class="stat-num" data-count="30">0</span><span class="stat-suffix">+</span><span class="band-label">Engineers &amp; supervisors</span></div>
-      <div class="band-stat"><span class="stat-num" data-count="20">0</span><span class="stat-suffix">+</span><span class="band-label">Projects delivered</span></div>
+      <div class="band-stat"><span class="stat-num">2017</span><span class="band-label" data-i18n="band1">Established in Bahrain</span></div>
+      <div class="band-stat"><span class="stat-num" data-count="250">0</span><span class="stat-suffix">+</span><span class="band-label" data-i18n="band2">Skilled workforce</span></div>
+      <div class="band-stat"><span class="stat-num" data-count="30">0</span><span class="stat-suffix">+</span><span class="band-label" data-i18n="band3">Engineers &amp; supervisors</span></div>
+      <div class="band-stat"><span class="stat-num" data-count="20">0</span><span class="stat-suffix">+</span><span class="band-label" data-i18n="band4">Projects delivered</span></div>
     </div>
   </section>
 
@@ -189,25 +172,25 @@
   <section class="section values" id="values">
     <div class="container">
       <div class="section-head center">
-        <p class="section-eyebrow center"><span class="eyebrow-bar"></span> Our Direction</p>
-        <h2 class="section-title">Vision, mission &amp; values</h2>
+        <p class="section-eyebrow center"><span class="eyebrow-bar"></span> <span data-i18n="values.eyebrow">Our Direction</span></p>
+        <h2 class="section-title" data-i18n="values.title">Vision, mission &amp; values</h2>
       </div>
 
       <div class="vm-grid">
         <article class="vm-card">
-          <span class="vm-tag">Vision</span>
-          <p>To elevate Bahrain's real-estate and construction sector to rank among the region's leaders, applying modern technology and smart, innovative techniques.</p>
+          <span class="vm-tag" data-i18n="values.visiontag">Vision</span>
+          <p data-i18n="values.vision">To elevate Bahrain's real-estate and construction sector to rank among the region's leaders, applying modern technology and smart, innovative techniques.</p>
         </article>
         <article class="vm-card">
-          <span class="vm-tag">Mission</span>
-          <p>To be a dependable, responsible and trusted partner — delivering the highest level of professionalism and building long-term relationships rooted in integrity, performance and client satisfaction.</p>
+          <span class="vm-tag" data-i18n="values.missiontag">Mission</span>
+          <p data-i18n="values.mission">To be a dependable, responsible and trusted partner — delivering the highest level of professionalism and building long-term relationships rooted in integrity, performance and client satisfaction.</p>
         </article>
       </div>
 
       <div class="values-row">
-        <div class="value-pill"><span class="value-no">01</span><div><h4>Quality</h4><p>High-quality work delivered regardless of cost, built on respect for others.</p></div></div>
-        <div class="value-pill"><span class="value-no">02</span><div><h4>Integrity</h4><p>Honouring every commitment — to clients and to the institutions we work with.</p></div></div>
-        <div class="value-pill"><span class="value-no">03</span><div><h4>Reliability</h4><p>Strong commitment and accuracy, delivering projects on time, every time.</p></div></div>
+        <div class="value-pill"><span class="value-no">01</span><div><h4 data-i18n="val1.t">Quality</h4><p data-i18n="val1.d">High-quality work delivered regardless of cost, built on respect for others.</p></div></div>
+        <div class="value-pill"><span class="value-no">02</span><div><h4 data-i18n="val2.t">Integrity</h4><p data-i18n="val2.d">Honouring every commitment — to clients and to the institutions we work with.</p></div></div>
+        <div class="value-pill"><span class="value-no">03</span><div><h4 data-i18n="val3.t">Reliability</h4><p data-i18n="val3.d">Strong commitment and accuracy, delivering projects on time, every time.</p></div></div>
       </div>
     </div>
   </section>
@@ -216,71 +199,63 @@
   <section class="section projects" id="projects">
     <div class="container">
       <div class="section-head center">
-        <p class="section-eyebrow center"><span class="eyebrow-bar"></span> Our Work</p>
-        <h2 class="section-title">Projects across the Kingdom</h2>
-        <p class="section-sub">Every project deserves complete dedication and the investment of time, resources and quality.</p>
+        <p class="section-eyebrow center"><span class="eyebrow-bar"></span> <span data-i18n="projects.eyebrow">Our Work</span></p>
+        <h2 class="section-title" data-i18n="projects.title">Projects across the Kingdom</h2>
+        <p class="section-sub" data-i18n="projects.sub">Every project deserves complete dedication and the investment of time, resources and quality.</p>
       </div>
 
       <div class="projects-grid">
         <article class="project project-feature">
           <div class="project-img project-img-1"></div>
           <div class="project-body">
-            <span class="project-tag">Flagship · Juffair</span>
-            <h3>Burj Kadi</h3>
-            <p>
-              A landmark high-rise residential tower in Juffair — the signature development that showcases
-              Kadi One's turnkey construction capability and engineering quality.
-            </p>
+            <span class="project-tag" data-i18n="proj1.tag">Flagship · Juffair</span>
+            <h3 data-i18n="proj1.t">Burj Kadi</h3>
+            <p data-i18n="proj1.d">A landmark high-rise residential tower in Juffair — the signature development that showcases Kadi One's turnkey construction capability and engineering quality.</p>
           </div>
         </article>
-
         <article class="project">
           <div class="project-img project-img-2"></div>
           <div class="project-body">
-            <span class="project-tag">Juffair</span>
-            <h3>Orchid Plaza</h3>
-            <p>A modern residential and commercial development delivered to premium standards.</p>
+            <span class="project-tag" data-i18n="proj2.tag">Juffair</span>
+            <h3 data-i18n="proj2.t">Orchid Plaza</h3>
+            <p data-i18n="proj2.d">A modern residential and commercial development delivered to premium standards.</p>
           </div>
         </article>
-
         <article class="project">
           <div class="project-img project-img-3"></div>
           <div class="project-body">
-            <span class="project-tag">Juffair</span>
-            <h3>Hasabi Tower</h3>
-            <p>A contemporary tower adding to Kadi One's growing Juffair portfolio.</p>
+            <span class="project-tag" data-i18n="proj3.tag">Juffair</span>
+            <h3 data-i18n="proj3.t">Hasabi Tower</h3>
+            <p data-i18n="proj3.d">A contemporary tower adding to Kadi One's growing Juffair portfolio.</p>
           </div>
         </article>
-
         <article class="project">
           <div class="project-img project-img-4"></div>
           <div class="project-body">
-            <span class="project-tag">Amwaj Island</span>
-            <h3>Violet Residence</h3>
-            <p>Refined residential living on Bahrain's premier waterfront island.</p>
+            <span class="project-tag" data-i18n="proj4.tag">Amwaj Island</span>
+            <h3 data-i18n="proj4.t">Violet Residence</h3>
+            <p data-i18n="proj4.d">Refined residential living on Bahrain's premier waterfront island.</p>
           </div>
         </article>
-
         <article class="project">
           <div class="project-img project-img-5"></div>
           <div class="project-body">
-            <span class="project-tag">Seef</span>
-            <h3>The Courtyard</h3>
-            <p>A distinctive mixed-use development in the heart of the Seef district.</p>
+            <span class="project-tag" data-i18n="proj5.tag">Seef</span>
+            <h3 data-i18n="proj5.t">The Courtyard</h3>
+            <p data-i18n="proj5.d">A distinctive mixed-use development in the heart of the Seef district.</p>
           </div>
         </article>
-
         <article class="project">
           <div class="project-img project-img-6"></div>
           <div class="project-body">
-            <span class="project-tag">Juffair</span>
-            <h3>Dream View Suites</h3>
-            <p>Premium serviced residences delivered with Kadi One's signature finish.</p>
+            <span class="project-tag" data-i18n="proj6.tag">Juffair</span>
+            <h3 data-i18n="proj6.t">Dream View Suites</h3>
+            <p data-i18n="proj6.d">Premium serviced residences delivered with Kadi One's signature finish.</p>
           </div>
         </article>
       </div>
 
-      <p class="projects-more">
+      <p class="projects-more" data-i18n="projects.more">
         Also delivered: Modern Heights &amp; Rami View (Juffair) · Ramee Grand (Seef) · Al-Muntaza, Hateen &amp; Rowdha,
         Al-Safa &amp; Al-Marwa (Hidd) · Luxury Villas (Diyar Al Muharraq) &amp; many more across Bahrain.
       </p>
@@ -291,31 +266,15 @@
   <section class="section process" id="process">
     <div class="container">
       <div class="section-head center">
-        <p class="section-eyebrow center"><span class="eyebrow-bar"></span> How We Work</p>
-        <h2 class="section-title">From collaboration to ribbon-cutting</h2>
+        <p class="section-eyebrow center"><span class="eyebrow-bar"></span> <span data-i18n="process.eyebrow">How We Work</span></p>
+        <h2 class="section-title" data-i18n="process.title">From collaboration to ribbon-cutting</h2>
       </div>
 
       <ol class="process-steps">
-        <li class="step">
-          <span class="step-num">01</span>
-          <h3>Consult &amp; Plan</h3>
-          <p>We listen to your goals, study the site, and define scope, budget and timeline together.</p>
-        </li>
-        <li class="step">
-          <span class="step-num">02</span>
-          <h3>Design &amp; Build</h3>
-          <p>Our engineers turn vision into precise, buildable plans, then construct with skilled crews.</p>
-        </li>
-        <li class="step">
-          <span class="step-num">03</span>
-          <h3>Manage &amp; Assure</h3>
-          <p>Disciplined project management, safety and quality control keep delivery on time and on budget.</p>
-        </li>
-        <li class="step">
-          <span class="step-num">04</span>
-          <h3>Handover &amp; Care</h3>
-          <p>We hand over turnkey — and stand behind every project with after-handover support.</p>
-        </li>
+        <li class="step"><span class="step-num">01</span><h3 data-i18n="step1.t">Consult &amp; Plan</h3><p data-i18n="step1.d">We listen to your goals, study the site, and define scope, budget and timeline together.</p></li>
+        <li class="step"><span class="step-num">02</span><h3 data-i18n="step2.t">Design &amp; Build</h3><p data-i18n="step2.d">Our engineers turn vision into precise, buildable plans, then construct with skilled crews.</p></li>
+        <li class="step"><span class="step-num">03</span><h3 data-i18n="step3.t">Manage &amp; Assure</h3><p data-i18n="step3.d">Disciplined project management, safety and quality control keep delivery on time and on budget.</p></li>
+        <li class="step"><span class="step-num">04</span><h3 data-i18n="step4.t">Handover &amp; Care</h3><p data-i18n="step4.d">We hand over turnkey — and stand behind every project with after-handover support.</p></li>
       </ol>
     </div>
   </section>
@@ -324,10 +283,10 @@
   <section class="cta-banner">
     <div class="container cta-inner">
       <div>
-        <h2>Have a project in mind?</h2>
-        <p>Partner with a team that treats your project like its own. Let's build something that lasts.</p>
+        <h2 data-i18n="cta.title">Have a project in mind?</h2>
+        <p data-i18n="cta.sub">Partner with a team that treats your project like its own. Let's build something that lasts.</p>
       </div>
-      <a href="#contact" class="btn btn-light">Talk to Our Team</a>
+      <a href="#contact" class="btn btn-light" data-i18n="cta.btn">Talk to Our Team</a>
     </div>
   </section>
 
@@ -335,44 +294,36 @@
   <section class="section contact" id="contact">
     <div class="container contact-grid">
       <div class="contact-info">
-        <p class="section-eyebrow"><span class="eyebrow-bar"></span> Get In Touch</p>
-        <h2 class="section-title">Let's discuss your next build</h2>
-        <p class="section-sub">Reach out and our team will get back to you promptly.</p>
+        <p class="section-eyebrow"><span class="eyebrow-bar"></span> <span data-i18n="contact.eyebrow">Get In Touch</span></p>
+        <h2 class="section-title" data-i18n="contact.title">Let's discuss your next build</h2>
+        <p class="section-sub" data-i18n="contact.sub">Reach out and our team will get back to you promptly.</p>
 
         <ul class="contact-list">
           <li>
-            <span class="ci-icon" aria-hidden="true">
-              <svg viewBox="0 0 24 24"><path d="M12 21s7-6 7-11a7 7 0 0 0-14 0c0 5 7 11 7 11z"/><circle cx="12" cy="10" r="2.5"/></svg>
-            </span>
+            <span class="ci-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M12 21s7-6 7-11a7 7 0 0 0-14 0c0 5 7 11 7 11z"/><circle cx="12" cy="10" r="2.5"/></svg></span>
             <div>
-              <strong>Head Office</strong>
-              Building 3096, Road 1140, Block 111<br />Hidd, Muharraq Governorate, Kingdom of Bahrain<br />P.O. Box 50126
+              <strong data-i18n="contact.office">Head Office</strong>
+              <span data-i18n-html="contact.addr">Building 3096, Road 1140, Block 111<br />Hidd, Muharraq Governorate, Kingdom of Bahrain<br />P.O. Box 50126</span>
             </div>
           </li>
           <li>
-            <span class="ci-icon" aria-hidden="true">
-              <svg viewBox="0 0 24 24"><path d="M4 5l4-1 2 5-3 2a14 14 0 0 0 6 6l2-3 5 2-1 4a2 2 0 0 1-2 2A18 18 0 0 1 2 7a2 2 0 0 1 2-2z"/></svg>
-            </span>
+            <span class="ci-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M4 5l4-1 2 5-3 2a14 14 0 0 0 6 6l2-3 5 2-1 4a2 2 0 0 1-2 2A18 18 0 0 1 2 7a2 2 0 0 1 2-2z"/></svg></span>
             <div>
-              <strong>Phone</strong>
-              <a href="tel:+97377900900">+973 77 900 900</a>
+              <strong data-i18n="contact.phone">Phone</strong>
+              <a href="tel:+97377900900" dir="ltr">+973 77 900 900</a>
             </div>
           </li>
           <li>
-            <span class="ci-icon" aria-hidden="true">
-              <svg viewBox="0 0 24 24"><path d="M3 6h18v12H3zM3 7l9 6 9-6"/></svg>
-            </span>
+            <span class="ci-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M3 6h18v12H3zM3 7l9 6 9-6"/></svg></span>
             <div>
-              <strong>Email</strong>
+              <strong data-i18n="contact.email">Email</strong>
               <a href="mailto:info@kocbh.com">info@kocbh.com</a>
             </div>
           </li>
           <li>
-            <span class="ci-icon" aria-hidden="true">
-              <svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3a14 14 0 0 1 0 18M12 3a14 14 0 0 0 0 18"/></svg>
-            </span>
+            <span class="ci-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3a14 14 0 0 1 0 18M12 3a14 14 0 0 0 0 18"/></svg></span>
             <div>
-              <strong>Website</strong>
+              <strong data-i18n="contact.web">Website</strong>
               <a href="https://www.kocbh.com" target="_blank" rel="noopener">www.kocbh.com</a>
             </div>
           </li>
@@ -381,25 +332,25 @@
 
       <form class="contact-form" onsubmit="return false;">
         <div class="form-row">
-          <label>Full Name<input type="text" name="name" placeholder="Your name" required /></label>
-          <label>Email<input type="email" name="email" placeholder="you@email.com" required /></label>
+          <label data-i18n="form.name">Full Name<input type="text" name="name" placeholder="Your name" data-i18n-ph="form.name.ph" required /></label>
+          <label data-i18n="form.email">Email<input type="email" name="email" placeholder="you@email.com" required /></label>
         </div>
         <div class="form-row">
-          <label>Phone<input type="tel" name="phone" placeholder="+973 ..." /></label>
-          <label>Project Type
+          <label data-i18n="form.phone">Phone<input type="tel" name="phone" placeholder="+973 ..." /></label>
+          <label data-i18n="form.type">Project Type
             <select name="type">
-              <option>Turnkey Construction</option>
-              <option>Project Management</option>
-              <option>Civil / Structural</option>
-              <option>MEP Works</option>
-              <option>Renovation / Rehabilitation</option>
-              <option>Other</option>
+              <option data-i18n="form.opt1">Turnkey Construction</option>
+              <option data-i18n="form.opt2">Project Management</option>
+              <option data-i18n="form.opt3">Civil / Structural</option>
+              <option data-i18n="form.opt4">MEP Works</option>
+              <option data-i18n="form.opt5">Renovation / Rehabilitation</option>
+              <option data-i18n="form.opt6">Other</option>
             </select>
           </label>
         </div>
-        <label>Message<textarea name="message" rows="4" placeholder="Tell us about your project..."></textarea></label>
-        <button type="submit" class="btn btn-primary btn-block">Send Enquiry</button>
-        <p class="form-note">By submitting, you agree to be contacted about your enquiry.</p>
+        <label data-i18n="form.msg">Message<textarea name="message" rows="4" placeholder="Tell us about your project..." data-i18n-ph="form.msg.ph"></textarea></label>
+        <button type="submit" class="btn btn-primary btn-block" data-i18n="form.send">Send Enquiry</button>
+        <p class="form-note" data-i18n="form.note">By submitting, you agree to be contacted about your enquiry.</p>
       </form>
     </div>
   </section>
@@ -415,47 +366,48 @@
             <small>CONSTRUCTION</small>
           </span>
         </a>
-        <p>Kadi One Constructions WLL — a responsible &amp; trusted construction partner, proudly building the Kingdom of Bahrain.</p>
+        <p data-i18n="footer.tag">Kadi One Constructions WLL — a responsible &amp; trusted construction partner, proudly building the Kingdom of Bahrain.</p>
       </div>
 
       <div class="footer-col">
-        <h4>Company</h4>
+        <h4 data-i18n="footer.company.h">Company</h4>
         <ul>
-          <li><a href="#about">About Us</a></li>
-          <li><a href="#services">Services</a></li>
-          <li><a href="#values">Vision &amp; Values</a></li>
-          <li><a href="#projects">Projects</a></li>
+          <li><a href="#about" data-i18n="footer.about">About Us</a></li>
+          <li><a href="#services" data-i18n="footer.services">Services</a></li>
+          <li><a href="#values" data-i18n="footer.vision">Vision &amp; Values</a></li>
+          <li><a href="#projects" data-i18n="footer.projects">Projects</a></li>
         </ul>
       </div>
 
       <div class="footer-col">
-        <h4>Services</h4>
+        <h4 data-i18n="footer.services.h">Services</h4>
         <ul>
-          <li><a href="#services">Turnkey Construction</a></li>
-          <li><a href="#services">Project Management</a></li>
-          <li><a href="#services">Civil &amp; MEP Works</a></li>
-          <li><a href="#services">Renovation</a></li>
+          <li><a href="#services" data-i18n="footer.s1">Turnkey Construction</a></li>
+          <li><a href="#services" data-i18n="footer.s2">Project Management</a></li>
+          <li><a href="#services" data-i18n="footer.s3">Civil &amp; MEP Works</a></li>
+          <li><a href="#services" data-i18n="footer.s4">Renovation</a></li>
         </ul>
       </div>
 
       <div class="footer-col">
-        <h4>Contact</h4>
+        <h4 data-i18n="footer.contact.h">Contact</h4>
         <ul>
-          <li>Hidd, Muharraq, Bahrain</li>
-          <li><a href="tel:+97377900900">+973 77 900 900</a></li>
+          <li data-i18n="footer.loc">Hidd, Muharraq, Bahrain</li>
+          <li><a href="tel:+97377900900" dir="ltr">+973 77 900 900</a></li>
           <li><a href="mailto:info@kocbh.com">info@kocbh.com</a></li>
           <li><a href="https://www.kocbh.com" target="_blank" rel="noopener">www.kocbh.com</a></li>
         </ul>
       </div>
     </div>
     <div class="container footer-bottom">
-      <p>&copy; <span id="year"></span> Kadi One Constructions WLL. All rights reserved.</p>
-      <p class="footer-note">A subsidiary of the Kadi Group · CR 110333-1 · Kingdom of Bahrain.</p>
+      <p>&copy; <span id="year"></span> <span data-i18n="footer.copy">Kadi One Constructions WLL. All rights reserved.</span></p>
+      <p class="footer-note" data-i18n="footer.note">A subsidiary of the Kadi Group · CR 110333-1 · Kingdom of Bahrain.</p>
     </div>
   </footer>
 
   <a href="#top" class="back-to-top" aria-label="Back to top">↑</a>
 
   <script src="./assets/js/main.js"></script>
+  <script src="./assets/js/i18n.js"></script>
 </body>
 </html>
